@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap');
+
+body {
+    background:url('../img/repeat.jpg');
+    color: wheat;
+}
+
+
+
+h1, h2, .produs  {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+}
+h1 {
+    text-align: center;
+    font-family: 'Mr Dafoe', cursive!important;
+    color: rgb(247, 196, 101)!important;
+    font-size: 50px!important;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 1em;
+    width: 21cm;
+    margin: auto;
+    border-radius: 4px;
+    background-color: rgba(31, 35, 39, 0.849);
+    min-height: 100vh;
+}
+
+.ib {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: auto;    
+}
+
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+    width: 300px;
+}
+
+.produs {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.produs img {
+    display: block;
+    box-shadow: 2px 2px 2px wheat;
+
+}
+
+.produs div {
+    text-align: center;
+}
+
+.name {
+    font: 20px Verdana;
+    padding: 2px;
+    width: 300px;
+}
+
+.price,
+.currency {
+    font: 20px Verdana;
+    padding: 2px;
+
+}
+
+.add {
+    display: block;
+    margin: 3px auto;
+    height: 24px;
+    width: 140px;
+    border-radius: 5px;
+    background: transparent;
+    color: wheat;
+    border-radius: .3rem;
+    font: 16px Verdana;
+    text-align: center;
+    border-color: #6c757d;
+    border: 1px solid wheat;
+}
+
+.add:hover {
+    cursor:pointer;
+    transform: scale(0.95);
+    background: tomato;
+    color: black;
+}
+
+.cos {
+    width: calc(100% - 320px);
+}
+
+.cos table {
+    border-collapse: collapse;
+    width: 100%;
+    font: 10px Verdana;
+}
+
+.cos thead {
+    background-color: #777777;
+    color: #fff;
+}
+
+.cos th:not(:last-child) {
+    border-right: 1.5px solid #fff;
+}
+
+.cos th {
+    font-weight: bold;
+}
+
+.cos tbody td:not(:last-child) {
+    border-right: 1.5px solid #aaa;
+}
+
+.cos tbody tr {
+    border-bottom: 1.5px solid #aaa;
+}
+.cos td,
+.cos th {
+    padding: 5px;
+}
+
+.cos .name {
+    font: 10px Verdana;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: center;
+    width: 65px;
+}
+
+.cos input {
+    width: 40px;
+    text-align: center;
+}
+
+th:nth-child(3),
+th:nth-child(4),
+td:nth-child(3),
+td:nth-child(4) {
+    width: 120px;
+    text-align: right;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tfoot .total {
+    text-align: right;
+}
+
+.pret::after,
+.total::after {
+    content:" RON";
+}
+
+.remove {
+    color: wheat;
+    font-size: 15px;
+}
+
+.remove:hover {
+    cursor: pointer;
+}
+.menuLink:hover{
+    text-decoration: none!important;
+    color: rgb(247, 196, 101);
+}

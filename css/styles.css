@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap');
+html{
+    
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*video-section START*/
+
+.video-container{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    
+    
+}
+.video-container video{
+    min-width: 100%;
+    min-height: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.video-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(31, 35, 39);
+    background: linear-gradient(283deg, rgb(18, 20, 22) 0%, rgba(1,3,13,1) 100%);
+    z-index: 1;
+    opacity: .5;
+}
+
+/*video-section END*/
+
+/* Main navigation START*/
+.navbar{
+    width: 100%;
+    z-index: 100;
+    background: rgb(52,58,64);
+background: linear-gradient(283deg, rgba(52,58,64,1) 0%, rgba(1,3,13,1) 100%);
+
+}
+.navbar-brand{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 40px!important;
+    color: rgb(247, 196, 101)!important;
+    text-shadow: 2px 2px 2px black;
+
+}
+.nav-link:hover{
+    color:rgb(165, 51, 31)!important;
+    transform: scale(1.1)!important;
+}
+/* Main navigation END*/
+/* Main Header START*/
+.main-header{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    text-align: center;
+    color: wheat;
+}
+.main-header h1{
+    font-size: 120px;
+    font-family: 'Mr Dafoe', cursive;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(247, 196, 101)!important;
+    margin-top: -20px;
+}
+.main-header h3{
+    color: rgb(165, 51, 31)!important;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 60px;
+    margin-bottom: -35px;
+}
+.main-header button{
+    color: wheat!important;
+    background-color: transparent!important;
+}
+.main-header button:hover{
+    color: wheat!important;
+    background-color:  rgb(165, 51, 31)!important;
+}
+/* Main Header END*/
+/*Second Container START*/
+.second-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:100vh;
+    display: flex;
+    flex-direction: row;
+}
+.second1{
+    width: 30%;
+    height: 100%;
+    background-image: url('../images/hungry.jpg')!important;
+    background-size: cover;
+    z-index: 9;
+}
+.second2{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(31, 35, 39);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color:rgba(245, 222, 179, 0.719);
+    position: relative;
+}
+.second2 h1{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(247, 196, 101)!important;
+    text-decoration: underline;
+}
+.second2 p{
+    width: 60%;
+    margin:0 auto;
+    font-style: italic;
+    line-height: 2;
+    font-size: 19px;
+}   
+.second2 img{
+    position: absolute;
+    width: 190px;
+    right: 50px;
+    bottom: 50px;
+}
+.menuLink:hover{
+    text-decoration: none!important;
+    color: rgb(247, 196, 101);
+}
+
+/*Second Container END*/
+
+/*Third Container Start*/
+.third-container{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top:200vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/5.jpg')!important;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.third-overlay{
+    position: absolute;
+    top:200vh;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: rgb(31, 35, 39);
+    background: linear-gradient(283deg, rgb(18, 20, 22) 0%, rgba(1,3,13,1) 100%);
+    z-index: 1;
+    opacity: .5;
+}
+.third-container li{
+    z-index: 8;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+.third-container button{
+    margin: 0 auto;
+    z-index: 8;
+    color: wheat!important;
+    background-color: transparent!important;
+    font-size: 40px;
+    position: relative;
+}
+.third-container button:hover{
+    color: wheat!important;
+    background-color:  rgb(165, 51, 31)!important;
+}
+
+/*Third Container END*/
+
+
+/*Contact-Container Start*/
+.contact-container{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 250vh;
+    background: rgb(31, 35, 39);
+    background: linear-gradient(283deg, rgb(18, 20, 22) 0%, rgba(1,3,13,1) 100%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+}
+.contact-container h1{
+    font-size: 60px;
+    font-family: 'Mr Dafoe', cursive;
+    color: rgb(247, 196, 101)!important;
+    text-shadow: 2px 2px 2px black;
+}
+.contact-container h3{
+    color: rgb(165, 51, 31);
+}
+.contact-container ul{
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+}
+.contact-container ul li{
+    margin:0 20px;
+    padding: 20px 0;
+    font-size: 20px;
+    list-style: none;
+}
+.contact-container a{
+    text-decoration: none;
+    color: wheat;
+}
+.contact-container li:hover{
+    transform: scale(1.1);
+}
+.contact-container a:hover{
+    text-decoration: none;
+    color: rgb(165, 51, 31);
+}
+.contact-container i{
+    color: rgb(165, 51, 31);
+}
+.fa-envelope{
+    margin-right: 3px;
+}
+/*Contact-Container END*/
+
+/*Menu-Container START*/
+
+.menu-blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.644);
+    z-index: 998;
+    filter: blur(12px);
+    display: none;
+}
+.menu-top{
+    width: 100%;
+    height: 20vh;
+    background: black;
+    top: 0;
+    color: wheat;
+    text-align: center;
+    font-family: 'Mr Dafoe', cursive;
+}
+.menu-top h1{
+    margin-top: 40px;
+    font-size: 60px;
+}
+.menu-container{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 20px;
+    background: wheat;
+    flex-direction: column;
+    color: rgb(31, 35, 39);
+    border-radius: 20px;
+    line-height: 3;
+}
+.menu-tab h2{
+    font-family: 'Mr Dafoe', cursive;
+}
+.menu-tab h2, p{
+    margin-left: 20px;
+}
+.menu-tab{
+    
+    position: relative;
+}
+.menu-tab button{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+/*Menu-Container END*/
+
+
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/w3images/pizza.jpg");
+    min-height: 90%;
+  }
+  .w3-container{
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      background: white;
+  }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-header h1{
+        font-size: 35px;
+        margin-top: 40px;
+        
+    }
+    .third-container button{
+        font-size: 20px;
+    }
+    .main-header h3{
+        font-size: 30px;
+    }
+    .second1{
+        display: none;
+    }
+    .second2 h1{
+        margin-bottom: 30px;
+        margin-top: -150px;
+        font-size: 40px;
+    }
+    .second2 p{
+        font-size: 17px;
+        width: 90%;
+    }
+    .second2{
+        width: 100%;
+    }
+    .second2 img{
+        left: 50%;
+        transform: translate(-50%);
+        bottom:30px;
+    }
+
+}

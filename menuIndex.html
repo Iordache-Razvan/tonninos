@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tonninos Menu</title>
+    <link rel="stylesheet" href="css/menuCss.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <template id="product-template">
+        <li>
+            <div class="produs">
+                <div class="name"></div>
+                <img class="image" src="" alt="product-image">
+                <div class="price"></div>
+                <div class="add" data-index="">Add</div>
+            </div>
+        </li>
+    </template>
+
+    <template id="item-basket-template">
+        <tr>
+            <td class="name"></td>
+            <td>
+                <input class="cantitate" type="number" name="cantitate" value="1" min="1">
+                <div class="remove" data-index="">Clear</div>
+            </td>
+            <td class="price"></td>
+            <td class="total"></td>
+        </tr>
+    </template>
+
+    <div class="container">
+        <h1>Tonninos Menu</h1>
+
+        <div class="produse ib">
+            <h2 style="text-align: left; font-size: 20px;"> <br> </h2>
+            <div class="header">
+                <div class="ib">
+                    <label for="sortare">Sort</label>
+                    <select name="sortare" id="sortare">
+                        <option value="cmpNumeCrescator">By Name Ascending</option>
+                        <option value="cmpNumeDescrescator">By Name Descending</option>
+                        <option value="cmpPretCrescator" selected>By Price Ascending</option>
+                        <option value="cmpPretDescrescator">By price Descending</option>
+                    </select>
+                </div>
+            </div>
+
+            <ol class="lista " id="data">
+
+            </ol>
+        </div>
+
+        <div class="cos ib">
+            <h2 style="text-align: right; font-family: 'Mr Dafoe', cursive!important;font-size: 30px;">Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Your Choice</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items">                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="total" class="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="src/config.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/sortareProduse.js"></script>
+    <script src="src/cosCumparaturi.js"></script>
+</body>
+
+</html>
